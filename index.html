@@ -87,6 +87,7 @@ h1{
   text-decoration:none;
   margin-top:10px;
   transition:0.3s;
+  cursor:pointer;
 }
 
 .btn:hover{
@@ -112,8 +113,7 @@ h1{
 }
 </style>
 
-
-  <!-- Meta Pixel Code -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -123,12 +123,15 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '1455971039203061');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1455971039203061&ev=PageView&noscript=1"
-/></noscript>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1455971039203061&ev=PageView&noscript=1"/>
+</noscript>
 <!-- End Meta Pixel Code -->
 
 </head>
@@ -158,9 +161,9 @@ Beginner friendly concepts, step-by-step learning & market basics
 • Educational discussions only  
 </div>
 
-<a class="btn" onclick="joinTelegram()">
+<div class="btn" onclick="joinTelegram()">
 Join Free Telegram Community
-</a>
+</div>
 
 <div class="note">
 No investment advice • No guaranteed returns
@@ -173,13 +176,23 @@ No investment advice • No guaranteed returns
 <br><br>
 Ads Managed By <a href="https://t.me/+ifc6dyg-xiA2ZGE1">Digital Ads Expert</a>
 <br><br>
-This website is not affiliated with Facebook™ or Meta Platforms Inc.
+This website is not affiliated with Facebook™ or :contentReference[oaicite:0]{index=0} Inc.
 </div>
 
 </div>
 
 <script>
 function joinTelegram(){
+
+  // ✅ Track Subscribe Event
+  if(typeof fbq === "function"){
+    fbq('track', 'Subscribe', {
+      content_name: 'Telegram Community Join',
+      content_category: 'Trading Education'
+    });
+  }
+
+  // Redirect
   const tgWeb="https://telegram.me/+c8xh5eSUJbI1ZmQ1";
   window.location.href=tgWeb;
 }
