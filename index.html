@@ -4,16 +4,15 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<title>Arun Learning</title>
+<title>Titans Learning Hub</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 
 body{
-  font-family:system-ui,-apple-system,"Segoe UI",Roboto;
-  background:#f5f7fa;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:#f4f7f6;
   color:#0b1220;
-  padding:20px;
   display:flex;
   justify-content:center;
 }
@@ -22,117 +21,97 @@ body{
   width:100%;
   max-width:520px;
   background:#fff;
-  border-radius:14px;
-  padding:22px;
-  box-shadow:0 12px 35px rgba(0,0,0,0.08);
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
   text-align:center;
-}
-
-.badge{
-  background:#e6f4ff;
-  color:#0a84ff;
-  padding:6px 12px;
-  border-radius:20px;
-  font-size:13px;
-  font-weight:700;
-  display:inline-block;
-  margin-bottom:12px;
+  padding:20px;
 }
 
 .logo{
-  width:80px;height:80px;
+  width:80px;
+  height:80px;
+  border-radius:16px;
+  background:#eaf6ff;
   margin:0 auto 14px;
-  border-radius:14px;
   overflow:hidden;
 }
-.logo img{width:100%;height:100%;object-fit:cover}
+
+.logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
 
 h1{
   font-size:20px;
-  margin-bottom:6px;
+  font-weight:700;
+  margin-bottom:8px;
 }
 
-.highlight{color:#0a84ff}
+.accent{color:#0aa3ff;}
 
 .sub{
   font-size:14px;
-  color:#333;
-  margin-bottom:10px;
-}
-
-.trust{
-  font-size:13px;
-  color:#16a34a;
-  font-weight:700;
+  color:#444;
   margin-bottom:12px;
 }
 
-.box{
-  background:#f1f5f9;
-  padding:12px;
-  border-radius:10px;
-  text-align:left;
-  font-size:14px;
+.badge{
+  font-size:13px;
+  background:#eef7ff;
+  padding:8px;
+  border-radius:8px;
   margin-bottom:14px;
-  line-height:1.6;
+}
+
+.features{
+  text-align:left;
+  margin:12px 0 18px;
+}
+
+.features li{
+  font-size:14px;
+  margin-bottom:8px;
 }
 
 .btn{
-  background:#0a84ff;
+  background:#0a7cff;
   color:#fff;
   padding:14px;
-  border-radius:40px;
-  font-weight:800;
-  display:block;
+  border-radius:8px;
+  font-weight:700;
   text-decoration:none;
-  margin-top:10px;
-  transition:0.3s;
-  cursor:pointer;
-}
-
-.btn:hover{
-  transform:scale(1.03);
+  display:block;
+  margin-bottom:12px;
 }
 
 .note{
-  font-size:12px;
-  margin-top:10px;
-  color:#555;
-}
-
-.footer{
-  margin-top:18px;
-  font-size:12px;
+  font-size:13px;
   color:#666;
-  line-height:1.6;
+  margin-bottom:14px;
 }
 
-.footer a{
+.footer-links{
+  margin-top:18px;
+  font-size:13px;
+  line-height:1.7;
+}
+
+.footer-links a{
   color:#0a84ff;
   text-decoration:none;
+  font-weight:600;
+}
+
+.disclaimer{
+  font-size:12px;
+  color:#777;
+  margin-top:16px;
+  line-height:1.6;
 }
 </style>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '1455971039203061');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1455971039203061&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
 
 </head>
 
@@ -140,63 +119,70 @@ src="https://www.facebook.com/tr?id=1455971039203061&ev=PageView&noscript=1"/>
 
 <div class="wrap">
 
-<div class="badge">100% Free Learning Community</div>
+  <div class="logo">
+    <img src="arun.jpg">
+  </div>
 
-<div class="logo">
-<img src="arun.jpg">
+  <h1>Learn Trading with <span class="accent">Arun Forex Learning Hub</span></h1>
+
+  <div class="sub">
+    Educational content on Crypto & Forex Trading for beginners
+  </div>
+
+  <div class="badge">
+    📘 Free learning community • No paid course required
+  </div>
+
+  <ul class="features">
+    <li>📊 Market insights for learning purposes</li>
+    <li>📘 Example trade setups & explanations</li>
+    <li>🧠 Beginner-friendly educational content</li>
+    <li>⚠️ Risk management basics</li>
+    <li>💬 Community discussions on Telegram</li>
+  </ul>
+
+  <a class="btn"
+     href="https://t.me/+IY7bQcCl1vphYThl"
+     target="_blank"
+     onclick="fbq('track','Lead');">
+     Join Free Learning Group
+  </a>
+
+  <div class="note">
+    Requires Telegram app to access the community
+  </div>
+
+  <!-- ✅ OLD FOOTER MERGED -->
+  <div class="footer-links">
+
+    Ads Maintained By  
+    <a href="https://t.me/+ifc6dyg-xiA2ZGE1" target="_blank">
+      Digital Ads Expert
+    </a>
+
+    <br><br>
+
+    <a href="https://ElitePips.online/privacy" target="_blank">
+      Privacy Policy
+    </a> •
+    <a href="https://ElitePips.online/disclaimer" target="_blank">
+      Disclaimer
+    </a> •
+    <a href="https://ElitePips.online/terms" target="_blank">
+      Terms
+    </a>
+
+  </div>
+
+  <!-- ✅ META SAFE DISCLAIMERS -->
+  <div class="disclaimer">
+   
+
+    <br><br>
+    This site is not part of Facebook™ or endorsed by Facebook™.
+  </div>
+
 </div>
-
-<h1>Learn Forex & Crypto with <span class="highlight">Expert Guidance</span></h1>
-
-<div class="sub">
-Beginner friendly concepts, step-by-step learning & market basics
-</div>
-
-<div class="trust">✔ 8,500+ learners joined</div>
-
-<div class="box">
-• Basics of Forex & Crypto  
-• Risk management understanding  
-• Market psychology concepts  
-• Educational discussions only  
-</div>
-
-<div class="btn" onclick="joinTelegram()">
-Join Free Telegram Community
-</div>
-
-<div class="note">
-No investment advice • No guaranteed returns
-</div>
-
-<div class="footer">
-<a href="/privacy.html">Privacy Policy</a> •
-<a href="/terms.html">Terms</a> •
-<a href="/disclaimer.html">Disclaimer</a>
-<br><br>
-Ads Managed By <a href="https://t.me/+ifc6dyg-xiA2ZGE1">Digital Ads Expert</a>
-<br><br>
-This website is not affiliated with Facebook™ or :contentReference[oaicite:0]{index=0} Inc.
-</div>
-
-</div>
-
-<script>
-function joinTelegram(){
-
-  // ✅ Track Subscribe Event
-  if(typeof fbq === "function"){
-    fbq('track', 'Subscribe', {
-      content_name: 'Telegram Community Join',
-      content_category: 'Trading Education'
-    });
-  }
-
-  // Redirect
-  const tgWeb="https://telegram.me/+c8xh5eSUJbI1ZmQ1";
-  window.location.href=tgWeb;
-}
-</script>
 
 </body>
 </html>
